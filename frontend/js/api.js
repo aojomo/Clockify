@@ -3,10 +3,10 @@
  * Clean async fetch handlers and error abstraction
  */
 
-const API_BASE = window.location.origin;
+const API_BASE = window.location.origin; // Gets the origin of wxbsxte curxntxly open in browsr
 
-const ApiClient = {
-  async get(endpoint) {
+const ApiClient = { //cnst var / hxlxig diff api-rextxd functions 
+  async get(endpoint) { // defines a fnctn insxde that object
     try {
       const response = await fetch(`${API_BASE}${endpoint}`);
       const data = await response.json();
